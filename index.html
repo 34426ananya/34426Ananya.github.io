@@ -1,56 +1,83 @@
-<!-- นี่คือโครงสร้างหน้าเว็บทังหมด ้ -->
 <!DOCTYPE html>
+
 <html lang="th">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>หน้าแนะนำตัวของฉัน</title>
+    <meta charset="UTF-8">
 
-<link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    background: linear-gradient(135deg, #bdefff, #dff7ff);
-    color: #555;
-    text-align: center;
-    padding: 50px 20px;
-    font-family: 'Mali', sans-serif;
-    min-height: 100vh;
-}
+    <title>Portfolio | Ananya</title>
 
-.card {
-    background: #fff5fa;
-    border: 5px solid #ffb6d5;
-    border-radius: 35px;
-    box-shadow: 0 8px 20px rgba(255, 150, 190, 0.3);
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 35px;
+    <link rel="stylesheet" href="style.css">
 
-}
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
-</style>
 </head>
+
 <body>
-<div class="card"<div class="card">
 
-    <h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</h1>
+<!-- เมนูด้านบนขวา -->
 
-    <p>สวัสดีค่ะ! หนูชื่อ <strong>อนัญญา (Ananya)</strong></p>
+<nav class="navbar">
 
-    <p>ขณะนี้กำลังศึกษา/สนใจด้าน Computer Science & Engineering</p>
+    <a href="index.html"> หน้าปก</a>
 
-    <p>นี่คือเว็บไซต์แรกของหนูที่โฮสต์บน GitHub Pages!</p>
+    <a href="profile.html"> ประวัติส่วนตัว</a>
 
-    <a href="portfolio.html"
+    <a href="education.html">การศึกษาต่อ</a>
 
-       style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">
+    <a href="activity.html"> กิจกรรม</a>
 
-       👉 ดูแฟ้มสะสมงานของฉัน
+</nav>
+
+<!-- หน้าปก -->
+
+<main class="cover">
+
+    <div class="decor">♡</div>
+
+    <!-- ใส่รูปของตัวเองตรงนี้ -->
+
+    <div class="profile-picture">
+
+        <img src="myphoto.jpg" alt="รูปของฉัน">
+
+    </div>
+
+    <h1>แฟ้มสะสมผลงาน</h1>
+
+    <h2>Portfolio</h2>
+
+    <div class="intro">
+
+        <p>สวัสดีค่ะ 👋🏻</p>
+
+        <p>
+
+            ฉันชื่อ <strong>อนัญญา</strong>
+
+            นักเรียนชั้นมัธยมศึกษาปีที่ 6
+
+        </p>
+
+        <p>
+
+            ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio
+
+            ของฉันนะคะ 
+
+        </p>
+
+    </div>
+
+    <a href="profile.html" class="main-button">
+
+         ดูประวัติส่วนตัว
 
     </a>
 
-</div>
-    
+</main>
+
+</body>
+
+</html>
