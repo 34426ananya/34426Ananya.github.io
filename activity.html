@@ -12,223 +12,457 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <style>
+
+        /* ===== หน้ากิจกรรมและผลงาน ===== */
+
+        .activity-intro {
+
+            text-align: center;
+
+            color: #777;
+
+            margin: 10px 0 28px;
+
+            line-height: 1.7;
+
+        }
+
+        /* กล่องกิจกรรม */
+
+        .activity-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 22px;
+
+            background: #f6fbff;
+
+            border: 2px solid #c9e8f5;
+
+            border-radius: 22px;
+
+            padding: 15px;
+
+            margin-bottom: 20px;
+
+            box-shadow: 0 5px 15px rgba(100, 160, 190, 0.12);
+
+            transition: 0.3s;
+
+        }
+
+        .activity-item:hover {
+
+            transform: translateY(-3px);
+
+        }
+
+        /* สลับสีชมพู */
+
+        .activity-item.pink {
+
+            background: #fff7fa;
+
+            border-color: #f2cddd;
+
+        }
+
+        /* กรอบรูป */
+
+        .activity-img {
+
+            width: 180px;
+
+            height: 125px;
+
+            flex-shrink: 0;
+
+            background: white;
+
+            padding: 6px;
+
+            border-radius: 16px;
+
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+        }
+
+        /* รูป */
+
+        .activity-img img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            display: block;
+
+        }
+
+        /* เนื้อหา */
+
+        .activity-info {
+
+            flex: 1;
+
+        }
+
+        .activity-info h2 {
+
+            margin: 0 0 8px;
+
+            color: #5d93b5;
+
+            font-size: 20px;
+
+        }
+
+        .activity-item.pink .activity-info h2 {
+
+            color: #c87595;
+
+        }
+
+        .activity-info p {
+
+            margin: 0 0 8px;
+
+            line-height: 1.7;
+
+            color: #555;
+
+        }
+
+        .activity-info span {
+
+            font-size: 14px;
+
+            color: #888;
+
+        }
+
+        /* ปุ่มกลับหน้าแรก */
+
+        .back-button {
+
+            display: block;
+
+            width: fit-content;
+
+            margin: 30px auto 10px;
+
+            padding: 10px 22px;
+
+            background: linear-gradient(135deg, #9edcf0, #f2b8d0);
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 20px;
+
+            font-weight: bold;
+
+            box-shadow: 0 4px 10px rgba(150, 180, 200, 0.2);
+
+        }
+
+        .back-button:hover {
+
+            opacity: 0.85;
+
+        }
+
+        /* ===== สำหรับโทรศัพท์ ===== */
+
+        @media (max-width: 650px) {
+
+            .activity-item {
+
+                gap: 14px;
+
+                padding: 12px;
+
+            }
+
+            .activity-img {
+
+                width: 125px;
+
+                height: 95px;
+
+            }
+
+            .activity-info h2 {
+
+                font-size: 17px;
+
+            }
+
+            .activity-info p {
+
+                font-size: 13px;
+
+            }
+
+            .activity-info span {
+
+                font-size: 12px;
+
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<nav class="navbar">
+    <!-- เมนูด้านบน -->
 
-    <a href="index.html">หน้าแรก</a>
+    <nav class="navbar">
 
-    <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="index.html">หน้าแรก</a>
 
-    <a href="education.html">การศึกษาต่อ</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
 
-    <a href="activity.html">กิจกรรมและผลงาน</a>
+        <a href="education.html">การศึกษาต่อ</a>
 
-    <a href="contact.html">ติดต่อ</a>
+        <a href="activity.html">กิจกรรมและผลงาน</a>
 
-</nav>
+        <a href="contact.html">ติดต่อ</a>
 
-<main class="container">
+    </nav>
 
-    <div class="title-box">
+    <!-- เนื้อหาหลัก -->
 
-        <span>♡</span>
+    <main class="container">
 
-        <h1>กิจกรรมและผลงาน</h1>
+        <!-- หัวข้อ -->
 
-        <span>♡</span>
+        <div class="title-box">
 
-    </div>
+            <span>♡</span>
 
-    <p class="activity-intro">
+            <h1>กิจกรรมและผลงาน</h1>
 
-        รวมกิจกรรม ประสบการณ์ และผลงานที่ฉันได้เข้าร่วมระหว่างการศึกษา 
+            <span>♡</span>
 
-    </p>
+        </div>
 
-    <div class="activity-grid">
+        <p class="activity-intro">
 
-        <!-- 1 จิตอาสา -->
+            รวมกิจกรรม ประสบการณ์ และผลงานที่ฉันได้เข้าร่วมระหว่างการศึกษา 💙
 
-        <div class="work-card">
+        </p>
 
-            <div class="work-image">
+        <!-- ===== กิจกรรมที่ 1 ===== -->
 
-                <img src="IMG_9192.jpeg" alt="กิจกรรมจิตอาสา">
+        <div class="activity-item">
+
+            <div class="activity-img">
+
+                <img
+
+                    src="LMG_9192.jpeg"
+
+                    alt="กิจกรรมจิตอาสา"
+
+                >
 
             </div>
 
-            <div class="work-content">
+            <div class="activity-info">
 
-                <h2> กิจกรรมจิตอาสา</h2>
+                <h2>♡ กิจกรรมจิตอาสา</h2>
 
                 <p>
 
-                    เข้าร่วมกิจกรรมจิตอาสาเพื่อช่วยเหลือผู้อื่น
+                    เข้าร่วมกิจกรรมจิตอาสาและมีส่วนร่วมในการทำกิจกรรม
 
-                    และร่วมทำกิจกรรมเพื่อประโยชน์ส่วนรวม
-
-                </p>
-
-                <p class="skill">
-
-                    ✦ สิ่งที่ได้รับ : ความรับผิดชอบ
-
-                    การทำงานร่วมกับผู้อื่น และจิตสาธารณะ
+                    เพื่อช่วยเหลือและทำประโยชน์ให้แก่ส่วนรวม
 
                 </p>
+
+                <span>
+
+                    ✦ สิ่งที่ได้รับ : ความรับผิดชอบและการทำงานร่วมกับผู้อื่น
+
+                </span>
 
             </div>
 
         </div>
 
-        <!-- 2 การนำเสนอผลงาน -->
+        <!-- ===== กิจกรรมที่ 2 ===== -->
 
-        <div class="work-card pink-card">
+        <div class="activity-item pink">
 
-            <div class="work-image">
+            <div class="activity-img">
 
-                <img src="IMG_1788jpeg" alt="การนำเสนอผลงาน">
+                <img
+
+                    src="LMG_1788.jpeg"
+
+                    alt="การนำเสนอผลงาน"
+
+                >
 
             </div>
 
-            <div class="work-content">
+            <div class="activity-info">
 
-                <h2> การนำเสนอผลงาน</h2>
+                <h2>♡ การนำเสนอผลงาน</h2>
 
                 <p>
 
-                    เข้าร่วมกิจกรรมการนำเสนอผลงาน
+                    เข้าร่วมการนำเสนอผลงานและนำเสนอผลงานต่อคณะกรรมการ
 
-                    และนำเสนอผลงานต่อคณะกรรมการ
-
-                </p>
-
-                <p class="skill">
-
-                    ✦ สิ่งที่ได้รับ : ทักษะการนำเสนอ
-
-                    การสื่อสาร และความมั่นใจ
+                    ทำให้ได้ฝึกการสื่อสารและการอธิบายผลงาน
 
                 </p>
+
+                <span>
+
+                    ✦ สิ่งที่ได้รับ : ทักษะการนำเสนอและความมั่นใจ
+
+                </span>
 
             </div>
 
         </div>
 
-        <!-- 3 ค่ายคณิตศาสตร์ -->
+        <!-- ===== กิจกรรมที่ 3 ===== -->
 
-        <div class="work-card">
+        <div class="activity-item">
 
-            <div class="work-image">
+            <div class="activity-img">
 
-                <img src="IMG_1789.jpeg" alt="ค่ายคณิตศาสตร์">
+                <img
+
+                    src="LMG_1789.jpeg"
+
+                    alt="ค่ายส่งเสริมทักษะกระบวนการทางคณิตศาสตร์"
+
+                >
 
             </div>
 
-            <div class="work-content">
+            <div class="activity-info">
 
-                <h2> ค่ายส่งเสริมทักษะทางคณิตศาสตร์</h2>
+                <h2>♡ ค่ายส่งเสริมทักษะกระบวนการทางคณิตศาสตร์</h2>
 
                 <p>
 
-                    เข้าร่วมค่ายส่งเสริมทักษะและกระบวนการ
+                    เข้าร่วมค่ายเพื่อพัฒนาทักษะและกระบวนการทางคณิตศาสตร์
 
-                    ทางคณิตศาสตร์
-
-                </p>
-
-                <p class="skill">
-
-                    ✦ สิ่งที่ได้รับ : การคิดวิเคราะห์
-
-                    การแก้ปัญหา และการทำงานเป็นทีม
+                    พร้อมทั้งฝึกการคิดวิเคราะห์และการแก้ปัญหา
 
                 </p>
+
+                <span>
+
+                    ✦ สิ่งที่ได้รับ : การคิดวิเคราะห์และการทำงานเป็นทีม
+
+                </span>
 
             </div>
 
         </div>
 
-        <!-- 4 อย.น้อย -->
+        <!-- ===== กิจกรรมที่ 4 ===== -->
 
-        <div class="work-card pink-card">
+        <div class="activity-item pink">
 
-            <div class="work-image">
+            <div class="activity-img">
 
-                <img src="IMH_1790.jpeg" alt="กิจกรรม อย.น้อย">
+                <img
+
+                    src="LMG_1790.jpeg"
+
+                    alt="แกนนำ อย.น้อย"
+
+                >
 
             </div>
 
-            <div class="work-content">
+            <div class="activity-info">
 
-                <h2>💚 กิจกรรม อย.น้อย</h2>
+                <h2>♡ แกนนำ อย.น้อย</h2>
 
                 <p>
 
-                    เข้าร่วมกิจกรรมและการอบรมของโครงการ
+                    เข้าร่วมกิจกรรมและทำหน้าที่แกนนำ อย.น้อย
 
-                    อย.น้อย เพื่อเรียนรู้เกี่ยวกับสุขภาพ
-
-                </p>
-
-                <p class="skill">
-
-                    ✦ สิ่งที่ได้รับ : ความรู้ด้านสุขภาพ
-
-                    และการนำความรู้ไปใช้ในชีวิตประจำวัน
+                    เพื่อเรียนรู้และเผยแพร่ความรู้เกี่ยวกับสุขภาพ
 
                 </p>
+
+                <span>
+
+                    ✦ สิ่งที่ได้รับ : ความรู้ด้านสุขภาพและการทำงานร่วมกับผู้อื่น
+
+                </span>
 
             </div>
 
         </div>
 
-        <!-- 5 อบรม -->
+        <!-- ===== กิจกรรมที่ 5 ===== -->
 
-        <div class="work-card">
+        <div class="activity-item">
 
-            <div class="work-image">
+            <div class="activity-img">
 
-                <img src="IMG_1787.jpeg" alt="กิจกรรมอบรม">
+                <img
+
+                    src="LMG_1787.jpeg"
+
+                    alt="กิจกรรมอบรม"
+
+                >
 
             </div>
 
-            <div class="work-content">
+            <div class="activity-info">
 
-                <h2> กิจกรรมอบรม</h2>
+                <h2>♡ กิจกรรมอบรม</h2>
 
                 <p>
 
-                    เข้าร่วมกิจกรรมอบรมเพื่อพัฒนาความรู้
+                    เข้าร่วมกิจกรรมอบรมเพื่อเพิ่มพูนความรู้
 
-                    ทักษะ และประสบการณ์ของตนเอง
-
-                </p>
-
-                <p class="skill">
-
-                    ✦ สิ่งที่ได้รับ : ความรู้ใหม่ ๆ
-
-                    และประสบการณ์ที่สามารถนำไปพัฒนาตนเอง
+                    ทักษะ และประสบการณ์ที่สามารถนำไปพัฒนาตนเอง
 
                 </p>
+
+                <span>
+
+                    ✦ สิ่งที่ได้รับ : ความรู้และประสบการณ์ใหม่ ๆ
+
+                </span>
 
             </div>
 
         </div>
 
-    </div>
+        <!-- ปุ่มกลับหน้าแรก -->
 
-    <a href="index.html" class="back-button">
+        <a href="index.html" class="back-button">
 
-         กลับไปหน้าแรก
+             กลับไปหน้าแรก
 
-    </a>
+        </a>
 
-</main>
+    </main>
 
 </body>
 
