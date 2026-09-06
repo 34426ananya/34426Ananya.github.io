@@ -4,377 +4,89 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfolio ของฉัน</title>
+    <title>ประวัติส่วนตัว | Portfolio</title>
 
-<style>
-
-body {
-
-    font-family: sans-serif;
-
-    background: linear-gradient(135deg, #e8f7ff, #fff0f6);
-
-    margin: 0;
-
-    padding: 25px;
-
-    color: #555;
-
-}
-
-/* ===== เมนูด้านบน ===== */
-
-.navbar {
-
-    display: flex;
-
-    justify-content: flex-end;
-
-    flex-wrap: wrap;
-
-    gap: 10px;
-
-    margin-bottom: 25px;
-
-}
-
-.navbar a {
-
-    text-decoration: none;
-
-    color: #5b8dab;
-
-    background: white;
-
-    border: 2px solid #a9dff5;
-
-    padding: 10px 15px;
-
-    border-radius: 25px;
-
-    font-weight: bold;
-
-    box-shadow: 0 4px 10px rgba(150,190,220,0.2);
-
-    transition: 0.3s;
-
-}
-
-.navbar a:nth-child(2),
-
-.navbar a:nth-child(4) {
-
-    color: #c86f91;
-
-    border-color: #f4b6ce;
-
-}
-
-.navbar a:hover {
-
-    transform: translateY(-3px);
-
-    background: #f4fbff;
-
-}
-
-/* ===== กล่องหลัก ===== */
-
-.container {
-
-    max-width: 850px;
-
-    margin: auto;
-
-    background: white;
-
-    padding: 35px;
-
-    border-radius: 30px;
-
-    border: 4px solid #b9e7f8;
-
-    box-shadow: 0 8px 25px rgba(150,190,220,0.25);
-
-}
-
-/* ===== แต่ละหัวข้อ ===== */
-
-section {
-
-    margin-bottom: 35px;
-
-    padding: 25px;
-
-    border-radius: 25px;
-
-    background: #fcfdff;
-
-    border: 2px dashed #c5e8f7;
-
-}
-
-section:nth-child(even) {
-
-    border-color: #f5c4d6;
-
-    background: #fffafd;
-
-}
-
-h1 {
-
-    text-align: center;
-
-    color: #6197ba;
-
-    margin-top: 5px;
-
-}
-
-h2 {
-
-    color: #6298ba;
-
-    border-bottom: 2px solid #c7eafa;
-
-    padding-bottom: 8px;
-
-}
-
-section:nth-child(even) h2 {
-
-    color: #c96f91;
-
-    border-bottom-color: #f5c4d6;
-
-}
-
-p {
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-}
-
-/* ===== กล่องข้อมูล ===== */
-
-.info {
-
-    background: #eefaff;
-
-    padding: 15px 20px;
-
-    border-radius: 18px;
-
-    margin: 10px 0;
-
-}
-
-.info strong {
-
-    color: #558bab;
-
-}
-
-/* ===== ปุ่มกลับหน้าแรก ===== */
-
-.back-home {
-
-    display: block;
-
-    width: fit-content;
-
-    margin: 25px auto 0;
-
-    padding: 11px 22px;
-
-    background: linear-gradient(135deg, #a9dff5, #f4b6ce);
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 25px;
-
-    font-weight: bold;
-
-    box-shadow: 0 4px 10px rgba(200,150,180,0.25);
-
-    transition: 0.3s;
-
-}
-
-.back-home:hover {
-
-    transform: translateY(-3px);
-
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- เมนูด้านบนขวามือ -->
-
 <nav class="navbar">
 
-    <a href="#cover">หน้าปก</a>
+    <a href="index.html">🏠 หน้าปก</a>
 
-    <a href="#profile">ประวัติส่วนตัว</a>
+    <a href="profile.html">🌷 ประวัติส่วนตัว</a>
 
-    <a href="#interest">ความสนใจในการศึกษาต่อ</a>
+    <a href="education.html">🎓 การศึกษาต่อ</a>
 
-    <a href="#activity">กิจกรรมที่เข้าร่วม</a>
+    <a href="activity.html">🏆 กิจกรรม</a>
 
 </nav>
 
-<div class="container">
+<main class="container">
 
-    <!-- ===== หน้าปก ===== -->
+    <div class="title-box">
 
-    <section id="cover">
+        <span>🌷</span>
 
-        <h1> แฟ้มสะสมงาน </h1>
+        <h1>ประวัติส่วนตัว</h1>
 
-        <h1>Portfolio</h1>
+        <span>🌷</span>
 
-        <p style="text-align:center;">
+    </div>
 
-            ยินดีต้อนรับเข้าสู่แฟ้มสะสมงานของฉัน 💙🩷
+    <div class="info-card">
 
-        </p>
+        <h2>♡ ข้อมูลส่วนตัว</h2>
 
-    </section>
+        <p><strong>ชื่อ :</strong> อนัญญา</p>
 
-    <!-- ===== ประวัติส่วนตัว ===== -->
+        <p><strong>ชื่อเล่น :</strong> ....................</p>
 
-    <section id="profile">
+        <p><strong>วันเกิด :</strong> ....................</p>
 
-        <h2> ประวัติส่วนตัว</h2>
+        <p><strong>ระดับชั้น :</strong> มัธยมศึกษาปีที่ 6</p>
 
-        <div class="info">
+        <p><strong>โรงเรียน :</strong> ....................</p>
 
-            <p><strong>ชื่อ :</strong> อนัญญา</p>
+    </div>
 
-        </div>
+    <div class="info-card pink">
 
-        <div class="info">
-
-            <p><strong>ระดับชั้น :</strong> มัธยมศึกษาปีที่ 6</p>
-
-        </div>
-
-        <div class="info">
-
-            <p><strong>โรงเรียน :</strong> ................................</p>
-
-        </div>
-
-        <div class="info">
-
-            <p><strong>งานอดิเรก :</strong> ................................</p>
-
-        </div>
-
-    </section>
-
-    <!-- ===== ความสนใจในการศึกษาต่อ ===== -->
-
-    <section id="interest">
-
-        <h2 ความสนใจในการศึกษาต่อ</h2>
+        <h2>♡ งานอดิเรก</h2>
 
         <p>
 
-            มีความสนใจในการศึกษาต่อในระดับมหาวิทยาลัย
-
-            และต้องการพัฒนาความรู้ ความสามารถ และทักษะของตนเอง
-
-            เพื่อนำไปต่อยอดในการเรียนและการทำงานในอนาคต
+            ........................................................
 
         </p>
 
-        <div class="info">
+    </div>
 
-            <p><strong>คณะที่สนใจ :</strong> ................................</p>
+    <div class="info-card">
 
-        </div>
+        <h2>♡ ความสามารถ</h2>
 
-        <div class="info">
+        <p>
 
-            <p><strong>มหาวิทยาลัยที่สนใจ :</strong> ................................</p>
+            ........................................................
 
-        </div>
+        </p>
 
-        <div class="info">
+    </div>
 
-            <p><strong>อาชีพที่สนใจในอนาคต :</strong> ................................</p>
+    <a href="index.html" class="back-button">
 
-        </div>
-
-    </section>
-
-    <!-- ===== กิจกรรมที่เข้าร่วม ===== -->
-
-    <section id="activity">
-
-        <h2>🦋 กิจกรรมที่เข้าร่วม</h2>
-
-        <div class="info">
-
-            <p>
-
-                <strong>📚 กิจกรรมภายในโรงเรียน</strong><br>
-
-                เข้าร่วมกิจกรรมต่าง ๆ ที่จัดขึ้นภายในโรงเรียน
-
-            </p>
-
-        </div>
-
-        <div class="info">
-
-            <p>
-
-                <strong>💗 กิจกรรมจิตอาสา</strong><br>
-
-                เข้าร่วมกิจกรรมที่ช่วยเหลือผู้อื่นและสังคม
-
-            </p>
-
-        </div>
-
-        <div class="info">
-
-            <p>
-
-                <strong>🌟 กิจกรรมและโครงงาน</strong><br>
-
-                เข้าร่วมการทำโครงงานและกิจกรรมที่ช่วยพัฒนาความรู้และทักษะ
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- ===== ปุ่มกลับหน้าแรก ===== -->
-
-    <a href="index.html" class="back-home">
-
-        🏠 กลับไปหน้าแรก
+        🏠 กลับไปหน้าปก
 
     </a>
 
-</div>
+</main>
 
 </body>
 
