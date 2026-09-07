@@ -14,53 +14,113 @@
 
     <style>
 
-        /* ตกแต่งเฉพาะหน้าปก */
-
         .cover {
 
             position: relative;
 
             overflow: hidden;
 
-        }
-
-        .cover::before {
-
-            content: "✦";
-
-            position: absolute;
-
-            top: 35px;
-
-            left: 45px;
-
-            font-size: 28px;
-
-            color: #72bde8;
-
-            animation: float 3s ease-in-out infinite;
+            text-align: center;
 
         }
 
-        .cover::after {
+        /* ของตกแต่งรอบ ๆ */
 
-            content: "♡";
+        .deco {
 
             position: absolute;
 
-            bottom: 35px;
+            z-index: 1;
 
-            right: 45px;
+            font-size: 24px;
 
-            font-size: 32px;
+            pointer-events: none;
+
+        }
+
+        .star1 {
+
+            top: 45px;
+
+            left: 80px;
+
+            color: #55a9d5;
+
+        }
+
+        .star2 {
+
+            top: 110px;
+
+            right: 75px;
 
             color: #e76b9b;
 
-            animation: float 3s ease-in-out infinite;
+            font-size: 20px;
 
         }
 
+        .heart1 {
+
+            top: 190px;
+
+            left: 55px;
+
+            color: #e76b9b;
+
+        }
+
+        .heart2 {
+
+            bottom: 105px;
+
+            right: 70px;
+
+            color: #72bde8;
+
+            font-size: 22px;
+
+        }
+
+        .dot1 {
+
+            width: 14px;
+
+            height: 14px;
+
+            border-radius: 50%;
+
+            background: #b9e4ff;
+
+            top: 80px;
+
+            right: 130px;
+
+        }
+
+        .dot2 {
+
+            width: 11px;
+
+            height: 11px;
+
+            border-radius: 50%;
+
+            background: #ffc5dc;
+
+            bottom: 85px;
+
+            left: 110px;
+
+        }
+
+        /* หัวข้อ */
+
         .cover-decoration {
+
+            position: relative;
+
+            z-index: 2;
 
             color: #e76b9b;
 
@@ -68,11 +128,15 @@
 
             letter-spacing: 10px;
 
-            margin-bottom: 10px;
+            margin-bottom: 8px;
 
         }
 
         .small-title {
+
+            position: relative;
+
+            z-index: 2;
 
             color: #4c91b8;
 
@@ -88,6 +152,10 @@
 
         .cover h1 {
 
+            position: relative;
+
+            z-index: 2;
+
             color: #164f70;
 
             font-size: 40px;
@@ -98,25 +166,35 @@
 
         .line {
 
-            width: 100px;
+            position: relative;
+
+            z-index: 2;
+
+            width: 110px;
 
             height: 4px;
 
             border-radius: 10px;
 
-            margin: 12px auto 20px;
+            margin: 12px auto 22px;
 
             background: linear-gradient(to right, #72bde8, #e76b9b);
 
         }
 
+        /* กรอบรูป */
+
         .cover-photo {
+
+            position: relative;
+
+            z-index: 2;
 
             width: 145px;
 
             height: 175px;
 
-            margin: 15px auto;
+            margin: 10px auto 18px;
 
             padding: 7px;
 
@@ -131,6 +209,38 @@
             transform: rotate(-2deg);
 
             transition: 0.4s;
+
+        }
+
+        .cover-photo::before {
+
+            content: "✦";
+
+            position: absolute;
+
+            top: -18px;
+
+            right: -17px;
+
+            color: #e76b9b;
+
+            font-size: 25px;
+
+        }
+
+        .cover-photo::after {
+
+            content: "♡";
+
+            position: absolute;
+
+            bottom: -20px;
+
+            left: -18px;
+
+            color: #72bde8;
+
+            font-size: 27px;
 
         }
 
@@ -154,43 +264,65 @@
 
         .cover h2 {
 
+            position: relative;
+
+            z-index: 2;
+
             color: #d34f83;
 
             font-size: 23px;
 
-            margin: 18px 0 8px;
+            margin: 15px 0 8px;
 
         }
 
         .welcome {
 
+            position: relative;
+
+            z-index: 2;
+
             color: #496b7d;
 
             font-size: 16px;
+
+            margin-bottom: 18px;
+
+        }
+
+        /* กล่องเล็กด้านล่าง */
+
+        .mini-box {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: inline-block;
+
+            padding: 9px 20px;
+
+            border: 2px solid #b9dff2;
+
+            border-radius: 20px;
+
+            background: #f5fbff;
+
+            color: #4d7890;
+
+            font-size: 13px;
+
+            box-shadow: 0 4px 12px rgba(70, 130, 165, 0.1);
 
         }
 
         .bottom {
 
+            position: relative;
+
+            z-index: 2;
+
             margin-top: 20px;
-
-            margin-bottom: 0;
-
-        }
-
-        @keyframes float {
-
-            0%, 100% {
-
-                transform: translateY(0);
-
-            }
-
-            50% {
-
-                transform: translateY(-7px);
-
-            }
 
         }
 
@@ -207,6 +339,30 @@
                 width: 125px;
 
                 height: 155px;
+
+            }
+
+            .star1 {
+
+                left: 25px;
+
+            }
+
+            .star2 {
+
+                right: 25px;
+
+            }
+
+            .heart1 {
+
+                left: 20px;
+
+            }
+
+            .heart2 {
+
+                right: 25px;
 
             }
 
@@ -234,11 +390,25 @@
 
 <main class="cover">
 
+    <!-- ของตกแต่ง -->
+
+    <span class="deco star1">✦</span>
+
+    <span class="deco star2">✧</span>
+
+    <span class="deco heart1">♡</span>
+
+    <span class="deco heart2">♡</span>
+
+    <span class="deco dot1"></span>
+
+    <span class="deco dot2"></span>
+
     <div class="cover-decoration">✦ ♡ ✦</div>
 
     <p class="small-title">MY PORTFOLIO</p>
 
-    <h1>แฟ้มสะสมผลงาน</h1>
+    <h1>แฟ้มสะสมงาน</h1>
 
     <div class="line"></div>
 
@@ -252,9 +422,15 @@
 
     <p class="welcome">
 
-        ยินดีต้อนรับ
+        ยินดีต้อนรับเข้าสู่แฟ้มสะสมงานของฉัน 
 
     </p>
+
+    <div class="mini-box">
+
+        ✧ My journey • My activities • My dreams ✧
+
+    </div>
 
     <div class="cover-decoration bottom">♡ ✦ ♡</div>
 
