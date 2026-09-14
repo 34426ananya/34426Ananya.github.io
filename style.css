@@ -533,10 +533,80 @@ hr {
 
     text-decoration: none;
 
-    display: inline-block;
+    display: inline-block;.page-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
 
 }
-.page-buttons {
+
+.page-buttons a {
+
+    text-decoration: none;
+
+}
+
+.page-buttons .back-button,
+
+.page-buttons .next-button {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 230px;
+
+    height: 55px;
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    border-radius: 30px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    box-shadow: 0 5px 12px rgba(100, 150, 200, 0.25);
+
+    transition: 0.3s;
+
+}
+
+.page-buttons .back-button {
+
+    background: linear-gradient(135deg, #65b5e8, #9b63d4);
+
+}
+
+.page-buttons .next-button {
+
+    background: linear-gradient(135deg, #65b5e8, #d85a9f);
+
+}
+
+.page-buttons a:hover {
+
+    transform: translateY(-3px);
+
+}
+}.page-buttons {
 
     display: flex;
 
