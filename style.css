@@ -536,3 +536,58 @@ hr {
     display: inline-block;
 
 }
+.page-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+.page-buttons .back-button,
+
+.page-buttons .next-button {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 12px rgba(100, 150, 200, 0.25);
+
+    transition: 0.3s;
+
+}
+
+.page-buttons .back-button {
+
+    background: linear-gradient(135deg, #65b5e8, #9b63d4);
+
+}
+
+.page-buttons .next-button {
+
+    background: linear-gradient(135deg, #65b5e8, #d85a9f);
+
+}
+
+.page-buttons a:hover {
+
+    transform: translateY(-3px);
+
+}
