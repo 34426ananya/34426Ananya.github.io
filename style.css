@@ -20,7 +20,7 @@ body {
 
 /* =========================
 
-   เมนู
+   เมนูด้านบน
 
 ========================= */
 
@@ -181,8 +181,6 @@ body {
     font-size: 25px;
 
 }
-
-/* เส้นใต้หัวข้อ */
 
 .title-box::after {
 
@@ -374,7 +372,101 @@ img:hover {
 
 /* =========================
 
-   ปุ่มกลับหน้าแรก
+   ปุ่มเปลี่ยนหน้า
+
+   ให้เท่ากันทุกหน้า
+
+========================= */
+
+.page-buttons {
+
+    position: relative;
+
+    z-index: 5;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ปุ่มทุกปุ่มขนาดเท่ากัน */
+
+.page-buttons .back-button,
+
+.page-buttons .next-button {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 230px;
+
+    min-width: 230px;
+
+    height: 55px;
+
+    min-height: 55px;
+
+    margin: 0;
+
+    padding: 0 15px;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    box-shadow: 0 6px 16px rgba(50, 90, 120, 0.20);
+
+    transition: 0.3s;
+
+}
+
+/* ปุ่มย้อนกลับ */
+
+.page-buttons .back-button {
+
+    background: linear-gradient(135deg, #65b5e8, #9b63d4);
+
+}
+
+/* ปุ่มหน้าถัดไป */
+
+.page-buttons .next-button {
+
+    background: linear-gradient(135deg, #65b5e8, #d85a9f);
+
+}
+
+/* เอฟเฟกต์ตอนกด/เอาเมาส์วาง */
+
+.page-buttons a:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 9px 20px rgba(50, 90, 120, 0.28);
+
+}
+
+/* =========================
+
+   ปุ่มกลับหน้าแรกแบบเดิม
 
 ========================= */
 
@@ -384,7 +476,15 @@ img:hover {
 
     z-index: 2;
 
-    display: inline-block;
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 230px;
+
+    height: 55px;
 
     margin-top: 15px;
 
@@ -394,9 +494,7 @@ img:hover {
 
     background: linear-gradient(135deg, #278dcc, #d34f83);
 
-    padding: 12px 24px;
-
-    border-radius: 25px;
+    border-radius: 30px;
 
     font-weight: bold;
 
@@ -407,6 +505,52 @@ img:hover {
 }
 
 .back-button:hover {
+
+    transform: translateY(-4px) scale(1.03);
+
+}
+
+/* =========================
+
+   ปุ่มไปหน้าถัดไปหน้าแรก
+
+========================= */
+
+.next-button {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 230px;
+
+    height: 55px;
+
+    margin-top: 15px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: linear-gradient(135deg, #278dcc, #d34f83);
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 6px 16px rgba(50, 90, 120, 0.2);
+
+    transition: 0.3s;
+
+}
+
+.next-button:hover {
 
     transform: translateY(-4px) scale(1.03);
 
@@ -460,7 +604,7 @@ hr {
 
 /* =========================
 
-   มือถือ
+   มือถือ / iPad
 
 ========================= */
 
@@ -514,221 +658,26 @@ hr {
 
     }
 
-}
-.page-buttons {
+    /* ปุ่มยังขนาดเท่ากัน แต่ไม่ล้นจอ */
 
-    display: flex;
+    .page-buttons {
 
-    justify-content: center;
+        flex-direction: column;
 
-    gap: 15px;
+        gap: 12px;
 
-    margin-top: 30px;
+    }
 
-    flex-wrap: wrap;
+    .page-buttons .back-button,
 
-}
+    .page-buttons .next-button {
 
-.page-buttons a {
+        width: 230px;
 
-    text-decoration: none;
+        min-width: 230px;
 
-    display: inline-block;.page-buttons {
+        height: 55px;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 20px;
-
-    margin-top: 30px;
-
-    flex-wrap: wrap;
-
-}
-
-.page-buttons a {
-
-    text-decoration: none;
-
-}
-
-.page-buttons .back-button,
-
-.page-buttons .next-button {
-
-    display: inline-flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    width: 230px;
-
-    height: 55px;
-
-    box-sizing: border-box;
-
-    margin: 0;
-
-    padding: 0;
-
-    border-radius: 30px;
-
-    color: white;
-
-    font-weight: bold;
-
-    font-size: 16px;
-
-    box-shadow: 0 5px 12px rgba(100, 150, 200, 0.25);
-
-    transition: 0.3s;
-
-}
-
-.page-buttons .back-button {
-
-    background: linear-gradient(135deg, #65b5e8, #9b63d4);
-
-}
-
-.page-buttons .next-button {
-
-    background: linear-gradient(135deg, #65b5e8, #d85a9f);
-
-}
-
-.page-buttons a:hover {
-
-    transform: translateY(-3px);
-
-}
-}.page-buttons {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin-top: 30px;
-
-    flex-wrap: wrap;
-
-}
-
-.page-buttons .back-button,
-
-.page-buttons .next-button {
-
-    display: inline-block;
-
-    padding: 12px 25px;
-
-    border-radius: 30px;
-
-    color: white;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    box-shadow: 0 5px 12px rgba(100, 150, 200, 0.25);
-
-    transition: 0.3s;
-
-}
-
-.page-buttons .back-button {
-
-    background: linear-gradient(135deg, #65b5e8, #9b63d4);
-
-}
-
-.page-buttons .next-button {
-
-    background: linear-gradient(135deg, #65b5e8, #d85a9f);
-
-}
-
-.page-buttons a:hover {
-
-    transform: translateY(-3px);
-
-}
-/* ===== ปุ่มเปลี่ยนหน้าให้เท่ากันทุกหน้า ===== */
-
-.page-buttons {
-
-    display: flex !important;
-
-    justify-content: center !important;
-
-    align-items: center !important;
-
-    gap: 20px !important;
-
-    margin-top: 30px !important;
-
-    flex-wrap: wrap !important;
-
-}
-
-.page-buttons .back-button,
-
-.page-buttons .next-button {
-
-    display: inline-flex !important;
-
-    justify-content: center !important;
-
-    align-items: center !important;
-
-    width: 230px !important;
-
-    height: 55px !important;
-
-    box-sizing: border-box !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    border-radius: 30px !important;
-
-    color: white !important;
-
-    text-decoration: none !important;
-
-    font-weight: bold !important;
-
-    font-size: 16px !important;
-
-    box-shadow: 0 5px 12px rgba(100, 150, 200, 0.25) !important;
-
-    transition: 0.3s !important;
-
-}
-
-.page-buttons .back-button {
-
-    background: linear-gradient(135deg, #65b5e8, #9b63d4) !important;
-
-}
-
-.page-buttons .next-button {
-
-    background: linear-gradient(135deg, #65b5e8, #d85a9f) !important;
-
-}
-
-.page-buttons a:hover {
-
-    transform: translateY(-3px) !important;
+    }
 
 }
