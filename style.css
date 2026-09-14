@@ -661,3 +661,74 @@ hr {
     transform: translateY(-3px);
 
 }
+/* ===== ปุ่มเปลี่ยนหน้าให้เท่ากันทุกหน้า ===== */
+
+.page-buttons {
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    gap: 20px !important;
+
+    margin-top: 30px !important;
+
+    flex-wrap: wrap !important;
+
+}
+
+.page-buttons .back-button,
+
+.page-buttons .next-button {
+
+    display: inline-flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    width: 230px !important;
+
+    height: 55px !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border-radius: 30px !important;
+
+    color: white !important;
+
+    text-decoration: none !important;
+
+    font-weight: bold !important;
+
+    font-size: 16px !important;
+
+    box-shadow: 0 5px 12px rgba(100, 150, 200, 0.25) !important;
+
+    transition: 0.3s !important;
+
+}
+
+.page-buttons .back-button {
+
+    background: linear-gradient(135deg, #65b5e8, #9b63d4) !important;
+
+}
+
+.page-buttons .next-button {
+
+    background: linear-gradient(135deg, #65b5e8, #d85a9f) !important;
+
+}
+
+.page-buttons a:hover {
+
+    transform: translateY(-3px) !important;
+
+}
